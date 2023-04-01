@@ -1,0 +1,172 @@
+/* Table of Content
+==================================================
+    #Font-Face
+	#Reset & Basics
+	#Typography
+	#Links
+	#Lists
+	#Images
+	#Forms
+    #Tables
+	#Other */
+
+
+/* #Font-Face
+================================================== */
+
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('../fonts/GothamPro-Light.eot');
+	src: local('../fonts/Gotham Pro Light'), local('../fonts/GothamPro-Light'),
+		url('../fonts/GothamPro-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro-Light.woff') format('woff'),
+		url('../fonts/GothamPro-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('../fonts/GothamPro.eot');
+	src: local('../fonts/Gotham Pro'), local('../fonts/GothamPro'),
+		url('../fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro.woff') format('woff'),
+		url('../fonts/GothamPro.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('../fonts/GothamPro-Medium.eot');
+	src: local('../fonts/Gotham Pro Medium'), local('../fonts/GothamPro-Medium'),
+		url('../fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro-Medium.woff') format('woff'),
+		url('../fonts/GothamPro-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('../fonts/GothamPro-Bold.eot');
+	src: local('../fonts/Gotham Pro Bold'), local('../fonts/GothamPro-Bold'),
+		url('../fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro-Bold.woff') format('woff'),
+		url('../fonts/GothamPro-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('../fonts/GothamPro-Black.eot');
+	src: local('../fonts/Gotham Pro Black'), local('../fonts/GothamPro-Black'),
+		url('../fonts/GothamPro-Black.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro-Black.woff') format('woff'),
+		url('../fonts/GothamPro-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Bebas Neue';
+	src: url('../fonts/BebasNeueRegular.eot');
+	src: local('../fonts/Bebas Neue Regular'), local('../fonts/BebasNeueRegular'),
+		url('../fonts/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/BebasNeueRegular.woff') format('woff'),
+		url('../fonts/BebasNeueRegular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Bebas Neue';
+	src: url('../fonts/BebasNeueBold.eot');
+	src: local('../fonts/Bebas Neue Bold'), local('../fonts/BebasNeueBold'),
+		url('../fonts/BebasNeueBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/BebasNeueBold.woff') format('woff'),
+		url('../fonts/BebasNeueBold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+/* #Reset & Basics 
+================================================== */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+/* #Links
+================================================== */
+	a, 
+    a:visited,
+    a:hover, 
+    a:focus {  
+       text-decoration: none;     
+    }
+
+/* #Lists
+================================================== */
+	li {
+        list-style-type: none;
+    }    
+
+/* #Forms
+================================================== */
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	textarea,
+	select {
+		border: 1px solid #ccc;
+		padding: 0 5px;
+		outline: none;
+		max-width: 100%;
+		display: block;
+		background: #fff;
+	}
+	
+	textarea {
+		min-height: 60px;
+        resize: none;
+        vertical-align: top;
+		overflow: auto; 
+	}
+            
+	input[type="checkbox"],
+    input[type="radio"] {
+		display: inline-block;
+		margin-right:5px; 
+	}
+        
+	button,
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"] {	
+	  text-decoration: none;
+      text-transform: none;
+	  cursor: pointer;
+      border:0 none;
+	  line-height: normal;
+      -webkit-appearance: none; 
+      cursor: pointer; 
+      *overflow: visible;   }
+      
+      
+	/* Fix for odd Mozilla border & padding issues */
+	button::-moz-focus-inner,
+	input::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+	}      	
+
+/* #Other
+================================================== */
+	:focus   { 
+        outline: none; 
+    }
+    

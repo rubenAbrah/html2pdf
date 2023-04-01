@@ -1,0 +1,569 @@
+.wrapper {
+  width: 1233px;
+  margin: 0 auto;
+  font-family: "Gotham Pro";
+  min-height: 1660px;
+  padding: 72px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.page-title {
+  position: relative;
+  padding-left: 204px;
+  font-family: "Bebas Neue";
+  text-transform: uppercase;
+  font-size: 78px;
+  line-height: 55px;
+  font-weight: bold;
+}
+
+.page-title::before {
+  content: '';
+  display: block;
+  background: #ff2525;
+  width: 195px;
+  height: 55px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo {
+  width: 209px;
+  height: 120px;
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+.header .contacts-box {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+
+/**** FIRST PAGE ****/
+.first-page {
+  background-image: url(../img/bg1.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.first-block {
+  padding: 0 70px;
+}
+.first-block .text-box {
+  display: flex;
+  align-items: center;
+}
+.first-block .text-box .ico {
+  width: 45px;
+  height: 45px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top center;
+  margin-right: 15px;
+}
+.first-block .text-box .ico:nth-of-type(1) {
+  background-image: url(../img/contacts1.png);
+}
+.first-block .text-box .ico:nth-of-type(2) {
+  background-image: url(../img/contacts2.png);
+}
+.first-block .text-box .text {
+  font-weight: 900;
+  font-size: 32px;
+}
+.first-block .text-box:nth-of-type(2) {
+  margin-top: 10px;
+}
+.first-block .text-box:nth-of-type(2) .text {
+  font-weight: bold;
+}
+.btn-download{
+  padding: 20px;
+  background-color: red;
+  color:#fff;
+}
+.first-block h1 {
+  margin: 151px 0 0;
+  font-size: 136px;
+  font-family: "Bebas Neue";
+  font-weight: bold;
+  text-indent: 20px;
+  line-height: 130px;
+}
+.first-block h1 span {
+  color: #ff2525;
+}
+.first-block .subtitle {
+  font-family: "Gotham Pro";
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 40px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/**** SECOND PAGE ****/
+.company-page {
+  padding: 87px 0 0;
+}
+.company-page .text-block {
+  margin: 81px 0 115px;
+  padding: 0 65px;
+}
+.company-page .text-block .text {
+  margin-bottom: 51px;
+  font-family: "Gotham Pro";
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 44px;
+}
+.company-page .bottom-part {
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-image: url(../img/bg2.png);
+}
+.company-page .bottom-part .features-block {
+  padding: 135px 80px 15px;
+  border-top: 5px solid #ff2525;
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+  flex-wrap: wrap;
+}
+.company-page .bottom-part .features-block .item {
+  display: flex;
+  align-items: center;
+  width: 47%;
+  margin-bottom: 130px;
+}
+.company-page .bottom-part .features-block .item .ico {
+  flex: 0 0 145px;
+  width: 145px;
+  height: 130px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  background-image: url(../img/company1.png);
+  margin-right: 30px;
+}
+.company-page .bottom-part .features-block .item .ico2 {
+  background-image: url(../img/company2.png);
+}
+.company-page .bottom-part .features-block .item .ico3 {
+  background-image: url(../img/company3.png);
+}
+.company-page .bottom-part .features-block .item .ico4 {
+  background-image: url(../img/company4.png);
+}
+.company-page .bottom-part .features-block .item .ico5 {
+  background-image: url(../img/company5.png);
+}
+.company-page .bottom-part .features-block .item .ico6 {
+  background-image: url(../img/company6.png);
+}
+.company-page .bottom-part .features-block .item .text {
+  text-transform: uppercase;
+  font-size: 27px;
+  font-family: "Bebas Neue";
+}
+.company-page .bottom-part .footer {
+  color: #fff;
+}
+
+/**** THIRD PAGE ****/
+.product-page {
+  padding: 87px 0 0;
+}
+.product-page .product-img {
+  height: 700px;
+  width: auto;
+  margin: 40px 50px 26px 77px;
+  display: block;
+}
+.product-page .product-box {
+  padding: 0 50px 0 77px;
+  display: flex;
+  justify-content: space-between;
+}
+.product-page .product-box .price-box {
+  display: flex;
+  align-items: flex-end;
+}
+.product-page .product-box .price-box .price {
+  background: #ff2525;
+  padding: 0px 40px 0 20px;
+  color: #fff;
+  margin-right: 20px;
+  font-size: 92px;
+  font-weight: bold;
+  line-height: 110px;
+  font-family: "Bebas Neue";
+  margin-right: 20px;
+  font-size: 78px;
+  font-weight: 600;
+  line-height: 110px;
+  font-family: sans-serif;
+}
+.product-page .product-box .price-box .cny-price {
+  color: #ff2525;
+  font-size: 37px;
+  font-weight: bold;
+  font-family: "Bebas Neue";
+}
+.product-page .product-box .right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-family: "Gotham Pro";
+}
+.product-page .product-box .right-side .text {
+  font-size: 31px;
+  font-weight: 500;
+}
+.product-page .product-box .right-side .text:nth-of-type(1) {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 33px;
+}
+.product-page .text-block {
+  padding: 119px 50px 0 79px;
+  font-family: 'Bebas Neue';
+  font-weight: bold;
+}
+.product-page .text-block .title {
+  font-size: 69px;
+  margin-bottom: 25px;
+}
+.product-page .text-block .text {
+  font-size: 21px;
+  font-family: "Gotham Pro";
+  font-weight: 500;
+  line-height: 26px;
+}
+.product-page .footer .contacts-box {
+  color: #505050;
+}
+
+/**** FORTH PAGE ****/
+.products-page {
+  padding: 87px 0 0;
+}
+.products-page .content {
+  position: relative;
+}
+.products-page .content .element {
+  position: absolute;
+  height: 600px;
+  width: 160px;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: bottom center;
+  background-image: url(../img/bg3.png);
+  bottom: 0;
+  right: 0;
+}
+.products-page .products-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 47px 77px 0;
+}
+.products-page .products-block .item {
+  width: 18%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.products-page .products-block .item .ico {
+  width: 200px;
+  height: 130px;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: bottom center;
+}
+.products-page .products-block .item:nth-of-type(1) .ico {
+  background-image: url(../img/product1.png);
+}
+.products-page .products-block .item:nth-of-type(2) .ico {
+  background-image: url(../img/product2.png);
+}
+.products-page .products-block .item:nth-of-type(3) .ico {
+  background-image: url(../img/product3.png);
+}
+.products-page .products-block .item:nth-of-type(4) .ico {
+  background-image: url(../img/product5.png);
+}
+.products-page .products-block .item:nth-of-type(5) .ico {
+  background-image: url(../img/product4.png);
+}
+.products-page .products-block .item:nth-of-type(6) .ico {
+  background-image: url(../img/product6.png);
+}
+.products-page .products-block .item:nth-of-type(7) .ico {
+  background-image: url(../img/product7.png);
+}
+.products-page .products-block .item:nth-of-type(8) .ico {
+  background-image: url(../img/product8.png);
+}
+.products-page .products-block .item:nth-of-type(9) .ico {
+  background-image: url(../img/product9.png);
+}
+.products-page .products-block .item:nth-of-type(10) .ico {
+  background-image: url(../img/product10.png);
+}
+.products-page .products-block .item:nth-of-type(11) .ico {
+  background-image: url(../img/product11.png);
+}
+.products-page .products-block .item:nth-of-type(12) .ico {
+  background-image: url(../img/product12.png);
+}
+.products-page .products-block .item:nth-of-type(13) .ico {
+  background-image: url(../img/product13.png);
+}
+.products-page .products-block .item:nth-of-type(14) .ico {
+  background-image: url(../img/product14.png);
+}
+.products-page .products-block .item:nth-of-type(15) .ico {
+  background-image: url(../img/product15.png);
+}
+.products-page .products-block .item:nth-of-type(16) .ico {
+  background-image: url(../img/product16.png);
+}
+.products-page .products-block .item:nth-of-type(17) .ico {
+  background-image: url(../img/product17.png);
+}
+.products-page .products-block .item:nth-of-type(18) .ico {
+  background-image: url(../img/product18.png);
+}
+.products-page .products-block .item:nth-of-type(19) .ico {
+  background-image: url(../img/product19.png);
+}
+.products-page .products-block .item:nth-of-type(20) .ico {
+  background-image: url(../img/product20.png);
+}
+.products-page .products-block .item .text {
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Gotham Pro';
+  font-weight: bold;
+}
+.products-page .title {
+  font-size: 54px;
+  font-weight: bold;
+  padding-left: 90px;
+  line-height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-family: 'Bebas Neue';
+}
+.products-page .title::before {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 40px;
+  background: #ff2525;
+  left: 0;
+  top: 0;
+}
+.products-page .services-block {
+  margin-top: 30px;
+  padding: 0 77px;
+}
+.products-page .services-block .services-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.products-page .services-block .services-box .item {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  line-height: 25px;
+}
+.products-page .services-block .services-box .item .text {
+  font-size: 21px;
+  font-weight: 300;
+}
+.products-page .services-block .services-box .item .ico {
+  width: 48px;
+  height: 48px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 20px;
+}
+.products-page .services-block .services-box .item:nth-of-type(1) .ico {
+  background-image: url(../img/ico1.png);
+}
+.products-page .services-block .services-box .item:nth-of-type(2) .ico {
+  background-image: url(../img/ico2.png);
+}
+.products-page .services-block .services-box .item:nth-of-type(3) .ico {
+  background-image: url(../img/ico3.png);
+}
+.products-page .services-block .services-box .item:nth-of-type(4) .ico {
+  background-image: url(../img/ico4.png);
+}
+.products-page .services-block .services-box .item:nth-of-type(5) .ico {
+  background-image: url(../img/ico5.png);
+}
+.products-page .services-block .services-box .item:nth-of-type(6) .ico {
+  background-image: url(../img/ico6.png);
+}
+.products-page .services-block .services-box .item:nth-of-type(7) .ico {
+  background-image: url(../img/ico7.png);
+}
+.products-page .services-block .services-box .item:nth-of-type(8) .ico {
+  background-image: url(../img/ico8.png);
+}
+.products-page .services-block .services-box .item:nth-of-type(9) .ico {
+  background-image: url(../img/ico9.png);
+}
+.products-page .services-block .services-box .item:nth-of-type(10) .ico {
+  background-image: url(../img/ico10.png);
+}
+.products-page .text-block {
+  padding: 0 77px;
+}
+.products-page .text-block .text {
+  font-weight: 300;
+  font-size: 21px;
+}
+
+/**** FIFTH PAGE ****/
+.specification-page {
+  position: relative;
+  padding: 87px 0 0;
+}
+.specification-page .element {
+  width: 520px;
+  height: 466px;
+  width: 580px;
+  height: 520px;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: bottom left;
+  background-image: url(../img/bg4.png);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+}
+.specification-page .specification-block {
+  margin-top: 45px;
+  padding: 0 117px;
+}
+.specification-page .specification-block .item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  font-family: "Gotham Pro";
+  align-items: center;
+}
+.specification-page .specification-block .item .text {
+  font-weight: bold;
+  width: 69%;
+  font-size: 17px;
+}
+.specification-page .specification-block .item .value {
+  font-weight: normal;
+  text-align: left;
+  width: 31%;
+  font-size: 21px;
+}
+
+.footer {
+  z-index: 2;
+  padding: 0 70px 35px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+.footer .logo-box {
+  display: flex;
+  align-items: center;
+}
+.footer .logo-box .logo {
+  width: 130px;
+  height: 75px;
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  margin-right: 18px;
+}
+.footer .logo-box .text {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.footer:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 5px;
+  background: #ff2525;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+.footer .contacts-box {
+  display: flex;
+  flex-direction: column;
+  margin-right: 18px;
+}
+.footer .contacts-box .text {
+  padding-left: 65px;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.footer .contacts-box .text-box {
+  display: flex;
+  align-items: center;
+}
+.footer .contacts-box .text-box .ico {
+  width: 43px;
+  height: 43px;
+  margin-right: 22px;
+  background-image: url(../img/contacts1.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+.footer .contacts-box .text-box .text {
+  padding: 0;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 32px;
+}
+.footer .contacts-box span {
+  padding-left: 65px;
+  font-weight: 300;
+  font-size: 23px;
+  text-transform: unset;
+}

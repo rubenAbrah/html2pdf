@@ -1,0 +1,530 @@
+$first: 'Bebas Neue';
+$second: 'Gotham Pro';
+$color: #ff2525;
+
+.wrapper {
+    width: 1233px;
+    margin: 0 auto;
+    font-family: $second;
+    min-height: 1660px;
+    padding: 72px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.page-title {
+    position: relative;
+    padding-left: 204px;
+    font-family: $first;
+    text-transform: uppercase;
+    font-size: 78px;
+    line-height: 55px;
+    font-weight: bold;
+}
+
+.page-title::before {
+    content: '';
+    display: block;
+    background: $color;
+    width: 195px;
+    height: 55px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+        width: 209px;
+        height: 120px;
+        background-image: url(../img/logo.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: center;
+    }
+    .contacts-box {
+        display: flex;
+        flex-direction: column;
+        margin-right: 50px;
+    }
+}
+
+/**** FIRST PAGE ****/
+
+.first-page {
+    //background-image: url(../img/bg1.png);
+    background-image: url(../img/bg1.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.first-block {
+    padding: 0 70px;
+    .text-box {
+        display: flex;
+        align-items: center;
+        .ico {
+            width: 45px;
+            height: 45px;
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            background-position: top center;
+            margin-right: 15px;
+        }
+        .ico:nth-of-type(1) {
+            background-image: url(../img/contacts1.png);
+        }
+        .ico:nth-of-type(2) {
+            background-image: url(../img/contacts2.png);
+        }
+        .text {
+            font-weight: 900;
+            font-size: 32px;
+        }
+    }
+    .text-box:nth-of-type(2) {
+        margin-top: 10px;
+        .text {
+            font-weight: bold;
+        }
+    }
+    h1 {
+        margin: 151px 0 0;
+        font-size: 136px;
+        font-family: $first;
+        font-weight: bold;
+        text-indent: 20px;
+        line-height: 130px;
+        span {
+            color: $color;
+        }
+    }
+    .subtitle {
+        font-family: $second;
+        font-size: 32px;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 40px;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/**** SECOND PAGE ****/
+
+.company-page {
+    padding: 87px 0 0;
+    .text-block {
+        margin: 81px 0 115px;
+        padding: 0 65px;
+        .text {
+            margin-bottom: 51px;
+            font-family: $second;
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 44px;
+        }
+    }
+    .bottom-part {
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-image: url(../img/bg2.png);
+        .features-block {
+            padding: 135px 80px 15px;
+            border-top: 5px solid $color;
+            display: flex;
+            justify-content: space-around;
+            color: #fff;
+            flex-wrap: wrap;
+            .item {
+                display: flex;
+                align-items: center;
+                width: 47%;
+                margin-bottom: 130px;
+                .ico {
+                    flex: 0 0 145px;
+                    width: 145px;
+                    height: 130px;
+                    background-repeat: no-repeat;
+                    background-size: 100% auto;
+                    background-position: center;
+                    background-image: url(../img/company1.png);
+                    margin-right: 30px;
+                }
+                .ico2 {
+                    background-image: url(../img/company2.png);
+                }
+                .ico3 {
+                    background-image: url(../img/company3.png);
+                }
+                .ico4 {
+                    background-image: url(../img/company4.png);
+                }
+                .ico5 {
+                    background-image: url(../img/company5.png);
+                }
+                .ico6 {
+                    background-image: url(../img/company6.png);
+                }
+                .text {
+                    text-transform: uppercase;
+                    font-size: 27px;
+                    font-family: $first;
+                }
+            }
+        }
+        .footer {
+            color: #fff;
+        }
+    }
+}
+
+/**** THIRD PAGE ****/
+
+.product-page {
+    padding: 87px 0 0;
+    .product-img {
+        height: 700px;
+        width: auto;
+        margin: 40px 50px 26px 77px;
+        display: block;
+    }
+    .product-box {
+        padding: 0 50px 0 77px;
+        display: flex;
+        justify-content: space-between;
+        .price-box {
+            display: flex;
+            align-items: flex-end;
+            
+            .price {
+                background: $color;
+                padding: 0px 40px 0 20px;
+                color: #fff;
+                margin-right: 20px;
+                font-size: 92px;
+                font-weight: bold;
+                line-height: 110px;
+                font-family: $first;                
+                margin-right: 20px;
+                font-size: 78px;
+                font-weight: 600;
+                line-height: 110px;
+                font-family: sans-serif;
+            }
+            .cny-price {
+                color: $color;
+                font-size: 37px;
+                font-weight: bold;
+                font-family: $first;
+            }
+        }
+        .right-side {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            font-family: $second;
+            .text {
+                font-size: 31px;
+                font-weight: 500;
+            }
+            .text:nth-of-type(1) {
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 33px;
+            }
+            .text:nth-of-type(2) {
+                
+            }
+            .text:nth-of-type(3) {
+                
+            }
+        }
+    }
+    .text-block {
+        padding: 119px 50px 0 79px;
+        font-family: 'Bebas Neue';
+        font-weight: bold;
+        .title {
+            font-size: 69px;
+            margin-bottom: 25px;
+        }
+        .text {
+            font-size: 21px;
+            font-family: "Gotham Pro";
+            font-weight: 500;
+            line-height: 26px;
+        }
+    }
+    .footer {
+        .contacts-box {
+            color: #505050;
+        }
+    }
+}
+
+/**** FORTH PAGE ****/
+
+.products-page {
+    padding: 87px 0 0;
+    .content {
+        position: relative;
+        .element {
+            position: absolute;
+            height: 600px;
+            width: 160px;
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            background-position: bottom center;
+            background-image: url(../img/bg3.png);
+            bottom: 0;
+            right: 0;
+        }
+    }
+
+    .products-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 47px 77px 0;
+        .item {
+            width: 18%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 10px;
+            .ico {
+                width: 200px;
+                height: 130px;
+                background-repeat: no-repeat;
+                background-size: auto 100%;
+                background-position: bottom center;
+            }
+            &:nth-of-type(1) .ico { background-image: url(../img/product1.png); }
+            &:nth-of-type(2) .ico { background-image: url(../img/product2.png); }
+            &:nth-of-type(3) .ico { background-image: url(../img/product3.png); }
+            &:nth-of-type(4) .ico { background-image: url(../img/product5.png); }
+            &:nth-of-type(5) .ico { background-image: url(../img/product4.png); }
+            &:nth-of-type(6) .ico { background-image: url(../img/product6.png); }
+            &:nth-of-type(7) .ico { background-image: url(../img/product7.png); }
+            &:nth-of-type(8) .ico { background-image: url(../img/product8.png); }
+            &:nth-of-type(9) .ico { background-image: url(../img/product9.png); }
+            &:nth-of-type(10) .ico { background-image: url(../img/product10.png); }
+            &:nth-of-type(11) .ico { background-image: url(../img/product11.png); }
+            &:nth-of-type(12) .ico { background-image: url(../img/product12.png); }
+            &:nth-of-type(13) .ico { background-image: url(../img/product13.png); }
+            &:nth-of-type(14) .ico { background-image: url(../img/product14.png); }
+            &:nth-of-type(15) .ico { background-image: url(../img/product15.png); }
+            &:nth-of-type(16) .ico { background-image: url(../img/product16.png); }
+            &:nth-of-type(17) .ico { background-image: url(../img/product17.png); }
+            &:nth-of-type(18) .ico { background-image: url(../img/product18.png); }
+            &:nth-of-type(19) .ico { background-image: url(../img/product19.png); }
+            &:nth-of-type(20) .ico { background-image: url(../img/product20.png); }
+            .text {
+                text-align: center;
+                font-size: 15px;
+                font-family: 'Gotham Pro';
+                font-weight: bold;
+            }
+        }
+    }
+    .title {
+        font-size: 54px;
+        font-weight: bold;
+        padding-left: 90px;
+        line-height: 40px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        font-family: 'Bebas Neue';
+        &::before {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 40px;
+            background: $color;
+            left: 0;
+            top: 0;
+        }
+    }
+    .services-block {
+        margin-top: 30px;
+        padding: 0 77px;
+        .services-box {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            
+            .item {
+                width: 50%;
+                display: flex;
+                align-items: center;
+                margin-bottom: 25px;
+                line-height: 25px;
+                .text {
+                    font-size: 21px;
+                    font-weight: 300;
+                }
+                .ico {
+                    width: 48px;
+                    height: 48px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    margin-right: 20px;
+                }
+                &:nth-of-type(1) .ico {background-image: url(../img/ico1.png);}
+                &:nth-of-type(2) .ico {background-image: url(../img/ico2.png);}
+                &:nth-of-type(3) .ico {background-image: url(../img/ico3.png);}
+                &:nth-of-type(4) .ico {background-image: url(../img/ico4.png);}
+                &:nth-of-type(5) .ico {background-image: url(../img/ico5.png);}
+                &:nth-of-type(6) .ico {background-image: url(../img/ico6.png);}
+                &:nth-of-type(7) .ico {background-image: url(../img/ico7.png);}
+                &:nth-of-type(8) .ico {background-image: url(../img/ico8.png);}
+                &:nth-of-type(9) .ico {background-image: url(../img/ico9.png);}
+                &:nth-of-type(10) .ico {background-image: url(../img/ico10.png);}
+                
+            }
+        }
+    }
+    .text-block {
+        padding: 0 77px;
+        .text {
+            font-weight: 300;
+            font-size: 21px;
+        }
+    }
+}
+
+/**** FIFTH PAGE ****/
+
+.specification-page {
+    position: relative;
+    padding: 87px 0 0;
+    .element {
+        width: 520px;
+        height: 466px;
+        width: 580px;
+        height: 520px;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        background-position: bottom left;
+        background-image: url(../img/bg4.png);
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        z-index: 1;
+    }
+    .specification-block {
+        margin-top: 45px;
+        padding: 0 117px;
+        .item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            font-family: $second;
+            align-items: center;
+            .text {
+                font-weight: bold;
+                width: 69%;
+                font-size: 17px;
+            }
+            .value {
+                font-weight: normal;
+                text-align: left;
+                width: 31%;
+                font-size: 21px;
+            }
+        }
+    }
+}
+
+
+.footer {
+    z-index: 2;
+    padding: 0 70px 35px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    .logo-box {
+        display: flex;
+        align-items: center;
+        .logo {
+            width: 130px;
+            height: 75px;
+            background-image: url(../img/logo.png);
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            background-position: center;
+            margin-right: 18px;
+        }
+        .text {
+            display: flex;
+            align-items: center;
+            font-size: 24px; 
+            font-weight: bold;
+            white-space: nowrap;
+        }
+    }
+    &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 5px;
+        background: $color;
+        left: 0;
+        bottom: 0;
+        position: absolute;
+    }
+    .contacts-box {
+        display: flex;
+        flex-direction: column;
+        margin-right: 18px;
+        .text {
+            padding-left: 65px;
+            font-weight: bold;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+        .text-box {
+            display: flex;
+            align-items: center;
+            .ico {
+                width: 43px;
+                height: 43px;
+                margin-right: 22px;
+                background-image: url(../img/contacts1.png);
+                background-repeat: no-repeat;
+                background-size: 100% auto;
+                background-position: center;
+            }
+            .text {
+                padding: 0;
+                font-weight: 900;
+                font-size: 32px;
+                line-height: 32px;
+            }
+        }
+        span {
+            padding-left: 65px;
+            font-weight: 300;
+            font-size: 23px;
+            text-transform: unset;
+        }
+    }
+
+    
+}
+
